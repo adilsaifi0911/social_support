@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import {
 	Box,
 	Table,
@@ -54,7 +56,7 @@ const ReviewInfo = () => {
 			</Typography>
 			<Box sx={{ mt: 2 }}>
 				{Object.entries(applicationData).map(([key, value]) => (
-					<>
+					<Fragment key={key}>
 						<Typography variant='h6' sx={{ mb: 1 }}>
 							{t(`${key}.title`)}
 						</Typography>
@@ -70,7 +72,7 @@ const ReviewInfo = () => {
 								))}
 							</TableBody>
 						</Table>
-					</>
+					</Fragment>
 				))}
 			</Box>
 		</Box>
