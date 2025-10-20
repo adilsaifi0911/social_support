@@ -1,0 +1,116 @@
+{
+	"languageSelector": {
+		"label": "اللغة",
+		"selectLanguage": "اختر اللغة",
+		"changingLanguage": "تغيير اللغة..."
+	},
+	"app": {
+		"title": "طلب الدعم الاجتماعي الحكومي",
+		"landing": "مرحبًا بكم في تطبيق الدعم الاجتماعي الحكومي",
+		"landingSubtitle": "ابدأ طلبك للحصول على الدعم الاجتماعي الحكومي من خلال النقر على الزر أدناه.",
+		"applicationSubmitted": "شكراً لك على تقديم طلبك!",
+		"alertApplicationSubmitted": "تم تقديم الطلب!",
+		"submissionFailed": "فشل في الإرسال. يرجى المحاولة مرة أخرى.",
+		"confirmText": "هل أنت متأكد أنك تريد الاحتفاظ بالنص الذي تم إنشاؤه بواسطة الذكاء الاصطناعي؟"
+	},
+	"navigation": {
+		"steps": {
+			"personalInformation": "المعلومات الشخصية",
+			"familyFinancialInfo": "المعلومات العائلية والمالية",
+			"situationDescriptions": "وصف الحالة",
+			"reviewAndSubmit": "المراجعة والإرسال"
+		},
+		"buttons": {
+			"next": "التالي",
+			"back": "السابق",
+			"submit": "إرسال",
+			"helpMeWrite": "ساعدني في الكتابة",
+			"accept": "قبول",
+			"reject": "رفض",
+			"edit": "تعديل",
+			"start": "ابدأ"
+		}
+	},
+	"personalInfo": {
+		"title": "المعلومات الشخصية",
+		"fields": {
+			"name": "الاسم",
+			"nationalId": "الهوية الوطنية",
+			"dateOfBirth": "تاريخ الميلاد",
+			"gender": "الجنس",
+			"address": "العنوان",
+			"city": "المدينة",
+			"state": "الولاية/المقاطعة",
+			"country": "الدولة",
+			"phone": "رقم الهاتف",
+			"email": "عنوان البريد الإلكتروني",
+			"genderOptions": {
+				"male": "ذكر",
+				"female": "أنثى",
+				"other": "آخر"
+			}
+		}
+	},
+	"familyFinancialInfo": {
+		"title": "المعلومات العائلية والمالية",
+		"fields": {
+			"maritalStatus": "الحالة الاجتماعية",
+			"dependents": "المعالون",
+			"employmentStatus": "حالة العمل",
+			"monthlyIncome": "الدخل الشهري",
+			"housingStatus": "حالة السكن",
+			"maritalStatusOptions": {
+				"single": "أعزب",
+				"married": "متزوج",
+				"divorced": "مطلق",
+				"widowed": "أرمل",
+				"separated": "منفصل"
+			},
+			"employmentStatusOptions": {
+				"employed_full_time": "موظف - دوام كامل",
+				"employed_part_time": "موظف - دوام جزئي",
+				"self_employed": "مستقل",
+				"unemployed": "عاطل عن العمل",
+				"student": "طالب",
+				"retired": "متقاعد",
+				"homemaker": "ربة منزل",
+				"freelancer": "مستقل / مقاول",
+				"other": "آخر"
+			},
+			"housingStatusOptions": {
+				"own": "مملوك",
+				"rent": "إيجار",
+				"living_with_family": "العيش مع العائلة",
+				"subsidized": "إسكان مدعوم",
+				"homeless": "مشرد",
+				"temporary": "إسكان مؤقت",
+				"other": "آخر"
+			}
+		}
+	},
+	"situationDescription": {
+		"title": "وصف الحالة",
+		"fields": {
+			"currentFinancialSituation": "الوضع المالي الحالي",
+			"employmentCircumstances": "ظروف العمل",
+			"reasonForApplying": "سبب التقديم"
+		}
+	},
+	"reviewSubmit": {
+		"title": "المراجعة والإرسال",
+		"instructions": "يرجى مراجعة معلوماتك قبل الإرسال."
+	},
+	"validation": {
+		"pleaseFixErrors": "يرجى إصلاح الأخطاء أعلاه قبل المتابعة.",
+		"errors": {
+			"required": "حقل {{field}} مطلوب",
+			"invalidEmail": "عنوان البريد الإلكتروني غير صالح",
+			"invalidPhone": "رقم الهاتف غير صالح، يجب أن يكون 10 أرقام",
+			"invalidNationalId": "تنسيق رقم الهوية غير صالح. الصيغة: 784-YYYY-NNNNNNN-N",
+			"invalidFormat": "تنسيق غير صالح لـ {{field}}، يجب أن يكون {{format}}",
+			"minChars": "يجب أن يحتوي {{field}} على الأقل على {{min}} أحرف",
+			"minValue": "يجب أن يكون {{field}} على الأقل {{min}}",
+			"maxValue": "يجب أن يكون {{field}} على الأكثر {{max}}"
+		}
+	}
+}

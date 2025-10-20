@@ -1,0 +1,99 @@
+/* Import Arabic font for better RTL support */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap');
+
+/* Global RTL support */
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  transition: direction 0.3s ease;
+}
+
+/* RTL specific styles */
+[dir="rtl"] {
+  font-family: 'Noto Sans Arabic', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Fix for RTL text alignment in form fields */
+[dir="rtl"] .MuiInputBase-input {
+  text-align: right;
+}
+
+[dir="rtl"] .MuiFormLabel-root {
+  transform-origin: right !important;
+  left: auto !important;
+  right: 0 !important;
+}
+
+/* Fix for RTL stepper */
+[dir="rtl"] .MuiStepper-root {
+  direction: rtl;
+}
+
+/* Fix stepper connector positioning for both LTR and RTL */
+.MuiStepConnector-root {
+  top: 12px;
+  left: calc(-50% + 20px);
+  right: calc(50% + 20px);
+}
+
+[dir="rtl"] .MuiStepConnector-root {
+  left: calc(50% + 20px);
+  right: calc(-50% + 20px);
+}
+
+/* Stepper connector line styling */
+.MuiStepConnector-line {
+  border-top-width: 2px;
+  border-color: #e0e0e0;
+}
+
+.MuiStepConnector-root.Mui-active .MuiStepConnector-line {
+  border-color: #1976d2;
+}
+
+.MuiStepConnector-root.Mui-completed .MuiStepConnector-line {
+  border-color: #1976d2;
+}
+
+/* Step icon positioning */
+.MuiStepIcon-root {
+  width: 24px;
+  height: 24px;
+}
+
+/* Alternative label stepper fixes */
+.MuiStepper-alternativeLabel .MuiStepConnector-root {
+  position: absolute;
+  top: 12px;
+  left: calc(-50% + 20px);
+  right: calc(50% + 20px);
+}
+
+[dir="rtl"] .MuiStepper-alternativeLabel .MuiStepConnector-root {
+  left: calc(50% + 20px);
+  right: calc(-50% + 20px);
+}
+
+/* Button spacing for RTL */
+[dir="rtl"] .MuiButton-startIcon {
+  margin-left: 8px;
+  margin-right: -4px;
+}
+
+[dir="rtl"] .MuiButton-endIcon {
+  margin-left: -4px;
+  margin-right: 8px;
+}

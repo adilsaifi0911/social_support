@@ -1,0 +1,116 @@
+{
+	"languageSelector": {
+		"label": "Language",
+		"selectLanguage": "Select Language",
+		"changingLanguage": "Changing Language..."
+	},
+	"app": {
+		"title": "Government Social Support Application",
+		"landing": "Welcome to the Government Social Support Application",
+		"landingSubtitle": "Start your application for government social support by clicking the button below.",
+		"applicationSubmitted": "Thank you for submitting your application!",
+		"alertApplicationSubmitted": "Application Submitted!",
+		"submissionFailed": "Submission failed. Please try again.",
+		"confirmText": "Are you sure you want to keep the AI-generated text?"
+	},
+	"navigation": {
+		"steps": {
+			"personalInformation": "Personal Information",
+			"familyFinancialInfo": "Family & Financial Info",
+			"situationDescriptions": "Situation Descriptions",
+			"reviewAndSubmit": "Review & Submit"
+		},
+		"buttons": {
+			"next": "Next",
+			"back": "Back",
+			"submit": "Submit",
+			"helpMeWrite": "Help me write",
+			"accept": "Accept",
+			"reject": "Reject",
+			"edit": "Edit",
+			"start": "Start"
+		}
+	},
+	"personalInfo": {
+		"title": "Personal Information",
+		"fields": {
+			"name": "Name",
+			"nationalId": "National ID",
+			"dateOfBirth": "Date of Birth",
+			"gender": "Gender",
+			"address": "Address",
+			"city": "City",
+			"state": "State/Province",
+			"country": "Country",
+			"phone": "Phone Number",
+			"email": "Email Address",
+			"genderOptions": {
+				"male": "Male",
+				"female": "Female",
+				"other": "Other"
+			}
+		}
+	},
+	"familyFinancialInfo": {
+		"title": "Family & Financial Information",
+		"fields": {
+			"maritalStatus": "Marital Status",
+			"dependents": "Dependents",
+			"employmentStatus": "Employment Status",
+			"monthlyIncome": "Monthly Income",
+			"housingStatus": "Housing Status",
+			"maritalStatusOptions": {
+				"single": "Single",
+				"married": "Married",
+				"divorced": "Divorced",
+				"widowed": "Widowed",
+				"separated": "Separated"
+			},
+			"employmentStatusOptions": {
+				"employed_full_time": "Employed – Full-time",
+				"employed_part_time": "Employed – Part-time",
+				"self_employed": "Self-employed",
+				"unemployed": "Unemployed",
+				"student": "Student",
+				"retired": "Retired",
+				"homemaker": "Homemaker",
+				"freelancer": "Freelancer / Contractor",
+				"other": "Other"
+			},
+			"housingStatusOptions": {
+				"own": "Own",
+				"rent": "Rent",
+				"living_with_family": "Living with Family",
+				"subsidized": "Subsidized Housing",
+				"homeless": "Homeless",
+				"temporary": "Temporary Housing",
+				"other": "Other"
+			}
+		}
+	},
+	"situationDescription": {
+		"title": "Situation Descriptions",
+		"fields": {
+			"currentFinancialSituation": "Current Financial Situation",
+			"employmentCircumstances": "Employment Circumstances",
+			"reasonForApplying": "Reason for Applying"
+		}
+	},
+	"reviewSubmit": {
+		"title": "Review and Submit",
+		"instructions": "Please review your information before submitting."
+	},
+	"validation": {
+		"pleaseFixErrors": "Please fix the errors above before proceeding.",
+		"errors": {
+			"required": "{{field}} is required",
+			"invalidEmail": "Invalid email address",
+			"invalidPhone": "Invalid phone number, must be 10 digits",
+			"invalidNationalId": "Invalid Emirates ID format. Use: 784-YYYY-NNNNNNN-N",
+			"invalidFormat": "Invalid format for {{field}}, must be {{format}}",
+			"minChars": "{{field}} must be at least {{min}} characters",
+			"minValue": "{{field}} must be at least {{min}}",
+			"maxValue": "{{field}} must be at most {{max}}"
+		}
+	}
+}
