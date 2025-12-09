@@ -11,7 +11,9 @@
 		"applicationSubmitted": "Thank you for submitting your application!",
 		"alertApplicationSubmitted": "Application Submitted!",
 		"submissionFailed": "Submission failed. Please try again.",
-		"confirmText": "Are you sure you want to keep the AI-generated text?"
+		"confirmText": "Are you sure you want to keep the AI-generated text?",
+		"registrationComplete": "Registration Complete",
+		"formInReview": "Your application form has been submitted successfully. It will be reviewed, and you will be contacted if it is accepted by the department for social support."
 	},
 	"navigation": {
 		"steps": {
@@ -28,7 +30,8 @@
 			"accept": "Accept",
 			"reject": "Reject",
 			"edit": "Edit",
-			"start": "Start"
+			"start": "Start",
+			"home": "Go to Home"
 		}
 	},
 	"personalInfo": {
@@ -105,12 +108,16 @@
 		"errors": {
 			"required": "{{field}} is required",
 			"invalidEmail": "Invalid email address",
-			"invalidPhone": "Invalid phone number, must be 10 digits",
+			"invalidPhone": "Invalid phone number. Please enter a valid international number using English or Arabic digits.",
 			"invalidNationalId": "Invalid Emirates ID format. Use: 784-YYYY-NNNNNNN-N",
 			"invalidFormat": "Invalid format for {{field}}, must be {{format}}",
 			"minChars": "{{field}} must be at least {{min}} characters",
 			"minValue": "{{field}} must be at least {{min}}",
-			"maxValue": "{{field}} must be at most {{max}}"
+			"maxValue": "{{field}} must be at most {{max}}",
+			"age18Above": "You must be at least {{years}} years old"
 		}
+	},
+	"format": {
+		"nationalId": "784-YYYY-NNNNNNN-N"
 	}
-}
+}	
