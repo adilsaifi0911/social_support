@@ -47,7 +47,7 @@ const RegistrationForm = () => {
 		validateCurrentStep,
 		resetApplication,
 		applicationData,
-	} = useApplication();
+	} = useApplication(); 
 	const dialogs = useDialogs();
 	const [isLoading, setIsLoading] = useState(false);
 
