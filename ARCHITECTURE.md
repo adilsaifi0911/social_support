@@ -103,7 +103,7 @@ ApplicationContext.tsx  // Global state management
 RTLThemeProvider.tsx   // Theme and direction handling
 
 // Custom Hooks
-useApplication.ts      // Application state hook
+useForm.ts      // Application state hook
 ```
 
 **Responsibilities:**
@@ -126,7 +126,7 @@ registrationService.ts // Backend API communication
 #### 4. Data Layer (`src/types/`, `src/schema/`, `src/data/`)
 ```typescript
 // Type Definitions
-applicationFormDataType.d.ts // Form data types
+formDataType.d.ts // Form data types
 
 // Validation Schemas
 personalInfoSchema.ts        // Step 1 validation
@@ -157,7 +157,7 @@ ApplicationContext {
   setCurrentStep: (step: number) => void
   
   // Data Persistence
-  applicationData: ApplicationFormDataType
+  applicationData: formDataType
   
   // Validation & Submission
   validateCurrentStep: () => Promise<boolean>
@@ -480,8 +480,8 @@ const KeyboardHandler: React.FC = () => {
 ```typescript
 // API Layer Architecture
 interface ApiClient {
-  submitApplication(data: ApplicationFormDataType): Promise<SubmissionResult>
-  saveDraft(data: Partial<ApplicationFormDataType>): Promise<void>
+  submitApplication(data: FormDataType): Promise<SubmissionResult>
+  saveDraft(data: Partial<FormDataType>): Promise<void>
   validateNationalId(id: string): Promise<ValidationResult>
   uploadDocuments(files: File[]): Promise<UploadResult>
 }
@@ -501,7 +501,7 @@ const SUBMIT_APPLICATION = gql`
 #### 2. Advanced Form Features
 ```typescript
 // Auto-save functionality
-const useAutoSave = (data: ApplicationFormDataType) => {
+const useAutoSave = (data: FormDataType) => {
   useEffect(() => {
     const saveTimer = setTimeout(() => {
       apiClient.saveDraft(data)
@@ -549,7 +549,7 @@ class ClaudeProvider implements AIProvider {
 }
 
 // Smart suggestions
-const useSmartSuggestions = (formData: ApplicationFormDataType) => {
+const useSmartSuggestions = (formData: FormDataType) => {
   const generateSuggestions = useCallback(async (field: string) => {
     const context = analyzeFormContext(formData)
     return await aiService.generateSuggestions(field, context)

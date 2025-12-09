@@ -130,7 +130,7 @@ src/
 ├── context/            # React context providers
 │   └── ApplicationContext.tsx
 ├── hooks/              # Custom React hooks
-│   └── useApplication.ts
+│   └── useForm.ts
 ├── schema/             # Yup schema
 │   └── applicationFormSchema.ts
 ├── services/           # API Calls
@@ -138,7 +138,7 @@ src/
 ├── theme/              # MUI theme configuration
 │   └── RTLThemeProvider.tsx
 ├── types/              # TypeScript type definitions
-│   └── applicationFormDataType.d.ts
+│   └── formDataType.d.ts
 ├── utils/              # Utility functions
 │   └── i18n.ts
 ├── App.tsx            # Main application component
@@ -164,9 +164,11 @@ public/
 
 ## 📱 Responsive Breakpoints
 
-- **Mobile**: < 600px
-- **Tablet**: 600px - 960px
-- **Desktop**: > 960px
+- **xs** -n extra-small: 0px
+- **sm** -n small: 600px
+- **md** -n medium: 900px
+- **lg** -n large: 1200px
+- **xl** -n extra-large: 1536px
 
 ## 🔧 Customization
 
